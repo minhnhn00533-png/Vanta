@@ -13,6 +13,7 @@ import LeadCapture from './components/LeadCapture';
 import Storytelling from './components/Storytelling';
 import BlogSection from './components/Blog';
 import TestimonialSection from './components/Testimonials';
+import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -63,6 +64,8 @@ export default function App() {
         <BlogSection />
         
         <TestimonialSection />
+        
+        <ContactForm />
       </main>
 
       <Footer />
