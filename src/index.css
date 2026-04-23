@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  
+  --color-brand-black: #000000;
+  --color-brand-white: #ffffff;
+  --color-brand-neon: #ccff00;
+  --color-brand-gray: #f9f9f9;
+  --color-brand-muted: #555555;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-white text-brand-black font-sans antialiased selection:bg-brand-neon selection:text-brand-black;
+  }
+}
+
+.brutal-border {
+  border: 2px solid var(--color-brand-black);
+}
+
+.brutal-border-b {
+  border-bottom: 2px solid var(--color-brand-black);
+}
+
+.brutal-border-r {
+  border-right: 2px solid var(--color-brand-black);
+}
+
+.neon-glow {
+  box-shadow: 4px 4px 0px var(--color-brand-black);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-reveal {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
